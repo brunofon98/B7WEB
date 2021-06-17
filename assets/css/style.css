@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+.filme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #eee;
+  margin-bottom: 20px;
+  border-radius: 0.25rem !important;
+}
+.filme strong {
+  text-align: center;
+}
+.filme img {
+  width: 100%;
+  opacity: 0.9;
+}
+.filme img:hover {
+  opacity: 1;
+}

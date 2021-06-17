@@ -5,11 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <div class="navbar navbar-dark bg-dark">
+      <div
+        class="navbar navbar-dark bg-dark"
+        style="border-bottom: 1px solid #555"
+      >
         <div class="container d-flex justify-content-between">
           <a href="#" class="navbar-brand">
             <strong>Filmes</strong>
@@ -20,22 +23,18 @@
         </div>
       </div>
     </header>
-    <main>
-      <section class="jumbotron text-center">
+    <main class="bg-dark text-light">
+      <section
+        class="jumbotron text-center bg-dark"
+        style="border-bottom: 1px solid #555"
+      >
         <div class="container">
           <h1 class="jumbotron-heading">Filmes em Cartaz</h1>
         </div>
       </section>
       <section>
         <div class="container">
-          <div class="row">
-            <div class="col-md-4">...</div>
-            <div class="col-md-4">...</div>
-            <div class="col-md-4">...</div>
-            <div class="col-md-4">...</div>
-            <div class="col-md-4">...</div>
-            <div class="col-md-4">...</div>
-          </div>
+          <div class="row filmes"></div>
         </div>
       </section>
     </main>
