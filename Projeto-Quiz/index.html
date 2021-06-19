@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Projeto Quiz feito com Boostrap 4.6</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--!FONT NOVA SQUARE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+     <!--!BOOTSTRAP  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!--!STYLE  -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-dark d-flex justify-content-center align-items-center text-light">
+    
+    <!--! INICIALIZAÇÃO DO QUIZ E CHAMADA DO MODAL -->
+    <button class="btn btn-lg btn-primary"data-toggle="modal"data-target="#modalQuiz">Começar Quiz</button>
+    
+    <!--! INÍCIO DO MODAL -->
+    <div class="modal fade" id="modalQuiz" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark text-light">
+          <!--! CABEÇALHO DO MODAL -->
+          
+          <div class="modal-header">
+            <h5 class="modal-title">Quiz sobre HTML5 e CSS3</h5>
+            <button type="button"class="close"data-dismiss="modal"aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <!--! CORPO DO MODAL -->
+          <div class="body">
+            <div class="container d-flex justify-content-center align-items-center flex-column">
+              <div class="cabecalho--quiz d-flex justify-content-between w-100">
+                <div class="col-6 ">
+                  <div class="col questaoNumero" id="score">Questão</div>
+                  <div class="progress">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="width: 0%"><span id="progress-bar--text"></span></div>
+                  </div>
+
+                </div>
+                <div class="col-6 pontuacao">Pontuação
+                  <p class="pontuacaoNumero">0</p>
+                </div>
+              </div>
+              <div class="body--quiz d-flex flex-column w-100">
+                <div class="perguntaQuiz">
+                  <h2 id="questao">Você sabe a resposta?</h2>
+                </div>
+                <div class="alternativasQuiz">
+                  <div class="row alternativa">
+                    <p class="lead letrasQuiz col-2">A </p>
+                    <p class="lead text-center respostasQuiz col-10" data-number="1">Escolha 1</p>
+                  </div>
+                  <div class="row alternativa">
+                    <p class="lead letrasQuiz col-2">B </p>
+                    <p class="lead text-center respostasQuiz col-10" data-number="2"> Escolha 2</p>
+                  </div>
+                  <div class="row alternativa">
+                    <p class="lead letrasQuiz col-2">C </p>
+                    <p class="lead text-center respostasQuiz col-10" data-number="3"> Escolha 3</p>
+                  </div>
+                  <div class="row alternativa">
+                    <p class="lead letrasQuiz col-2">D </p>
+                    <p class="lead text-center respostasQuiz col-10" data-number="4"> Escolha 4</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--! FOOTER DO MODAL -->
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    
+    
+    <!--! SCRIPTS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
